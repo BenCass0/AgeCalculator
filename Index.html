@@ -10,28 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="App.js"></script>
     <div class="Divi">
         <ul class="fecha">
             <li> 
                 <ul class="titu">
-                <li class="titulos">DAY</li>
-                <li class="titulos">MONTH</li>
-                <li class="titulo">YEAR</li>
+                <li class="titulos" id="td">DAY</li>
+                <li class="titulos" id="tm">MONTH</li>
+                <li class="titulos" id="ta">YEAR</li>
                 </ul>
             </li>
-            <li> 
+            <li class="in"> 
                 <ul class="inputs">
-                <li class="in"><input type="text" placeholder="DD"></li>
-                <li class="in"><input type="text" placeholder="MM"></li>
-                <li class="in"><input type="text" placeholder="YYYY"></li>
-                <li class="int"><button class="circulo"><img src="icon-arrow.svg" alt="Boton con flecha"></button></li>
+                <li class="in"><input type="text" placeholder="DD" id="dia"></li>
+                <li class="inp"><input type="text" placeholder="MM" id="mes"></li>
+                <li class="inpu"><input type="text" placeholder="YYYY" id="anio"></li>
+                <li class="int"><button class="circulo" id="miBoton"><img src="icon-arrow.svg" alt="Boton con flecha"></button></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="validacion" id="validacion">
+                    <li id="validacionuno"></li>
+                    <li class="validacion2" id="validaciondos"></li>
+                    <li class="validacion3" id="validaciontres"></li>
                 </ul>
             </li>
         </ul>
         <ul class="calculadora">
-            <li><span class="color">--</span> years</li>
-            <li><span class="color">--</span> months</li>
-            <li><span class="color">--</span> days</li>
+            <li><span class="color" id="aniosNumero">--</span> years</li>
+            <li><span class="color" id="mesesNumero">--</span> months</li>
+            <li><span class="color" id="diasNumero">--</span> days</li>
         </ul>
     </div>
 </body>
